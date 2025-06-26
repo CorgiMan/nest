@@ -1,0 +1,21 @@
+[package]
+name = "nest"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "mylib"
+path = "src/main.rs"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.21.0"
+geo = "0.24.0"
+image = "0.24.5"
+imageproc = "0.23.0"
+rand = "0.8.5"
+rayon = "1.7.0"
+serde = "1.0.160"
+serde_json = "1.0.96"

@@ -1,0 +1,45 @@
+# DONE
+
+- index.js
+- main.rs
+- job.rs
+- genetic_algorithm.rs
+
+# TODO
+
+- packing.rs - pack
+- nesting_runner.rs - setup initial state
+- nest_polygon.rs - NFP + some basic geo calculations
+- nfp_cache.rs
+
+# Nesting runner setup
+
+- pass sheet size
+- pass parts, run and calc some geometrical properties (isConvex, area, etc)
+- create rotations that fit
+- error when part doesn't fit
+- collect results
+- async start, stop, status
+
+# PackingSequence.pack
+
+- NFP
+- place parts one by one, using union
+
+# NFPCache
+
+- get NFP or calculate one
+- use angle between and swap part symmetry to avoid work
+
+# Tests
+
+- geometric_algorithm
+- packing
+- nest_polygon
+- nesting_manager
+
+# Production readyness
+
+- contextual logging (i.e. add ulid to logs, maybe tracing as well?)
+- timeout
+- check unwrap and unsafe usages
